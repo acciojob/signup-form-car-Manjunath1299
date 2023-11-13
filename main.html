@@ -10,7 +10,29 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+ <form action="/submit" method="post">
+	 <label for="name"> Name  </label>
+	 <input type="text" name="name" id="name" placeholder="Name" required>
+	 <br>
+	 <label for="email">Email </label>
+	 <input type="email" name="email" id="email" placeholder="Email" required>
+	 <br>
+	 <label> Gender</label>
+	 <input  type="radio" id="gender_m" name="gender" required >
+	 <label>Male</label>
+	 <input  type="radio" id="gender_f" name="gender" required >
+	 <label>Female</label>
+	 <br>
+	 <label for="cars">Car Brands:</label>
+    <select id="cars" name="cars" required>
+      <option value="" disabled selected>--Please choose an option--</option>
+      <!-- Add car brand options here -->
+      <option value="toyota">Toyota</option>
+      <option value="ford">Ford</option>
+      <option value="honda">Honda</option>
+    </select>
+	 
+ </form>
 </body>
 
 </html>
